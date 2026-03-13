@@ -1,0 +1,121 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #1c1e21;
+  background: #f4f7fb;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.status {
+  background: #eaf2ff;
+  border: 1px solid #d2e2ff;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  border: 1px solid #ccd4df;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 140px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  background: #dbe5f9;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #2667ff;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.preview-panel,
+.edit-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px #00000014;
+}
+
+canvas {
+  max-width: 100%;
+  border: 1px solid #d4dae4;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+ul {
+  margin: 8px 0 16px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+li button {
+  margin-left: 8px;
+  padding: 3px 8px;
+}
+
+.hint {
+  color: #62748a;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .editor-grid {
+    grid-template-columns: 1fr;
+  }
+}
